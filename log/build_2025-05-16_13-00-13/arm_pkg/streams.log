@@ -1,0 +1,26 @@
+[4.085s] Invoking command in '/home/jetson/NAV/src/arm_pkg': PS1=(venvnav) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jetson/NAV/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/jetson/NAV/build/arm_pkg/build install --record /home/jetson/NAV/build/arm_pkg/install.log --install-scripts $base/lib/arm_pkg --single-version-externally-managed install_data
+[5.248s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[5.248s]   warnings.warn(
+[5.385s] running egg_info
+[5.388s] writing ../../build/arm_pkg/arm_pkg.egg-info/PKG-INFO
+[5.393s] writing dependency_links to ../../build/arm_pkg/arm_pkg.egg-info/dependency_links.txt
+[5.393s] writing entry points to ../../build/arm_pkg/arm_pkg.egg-info/entry_points.txt
+[5.394s] writing requirements to ../../build/arm_pkg/arm_pkg.egg-info/requires.txt
+[5.395s] writing top-level names to ../../build/arm_pkg/arm_pkg.egg-info/top_level.txt
+[5.415s] reading manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[5.419s] writing manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[5.419s] running build
+[5.419s] running build_py
+[5.421s] copying arm_pkg/arm.py -> /home/jetson/NAV/build/arm_pkg/build/lib/arm_pkg
+[5.422s] running install
+[5.425s] running install_lib
+[5.429s] copying /home/jetson/NAV/build/arm_pkg/build/lib/arm_pkg/arm.py -> /home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages/arm_pkg
+[5.432s] byte-compiling /home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages/arm_pkg/arm.py to arm.cpython-38.pyc
+[5.433s] running install_data
+[5.435s] running install_egg_info
+[5.443s] removing '/home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages/arm_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[5.445s] Copying ../../build/arm_pkg/arm_pkg.egg-info to /home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages/arm_pkg-0.0.0-py3.8.egg-info
+[5.449s] running install_scripts
+[5.525s] Installing arm_node script to /home/jetson/NAV/install/arm_pkg/lib/arm_pkg
+[5.525s] writing list of installed files to '/home/jetson/NAV/build/arm_pkg/install.log'
+[5.628s] Invoked command in '/home/jetson/NAV/src/arm_pkg' returned '0': PS1=(venvnav) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jetson/NAV/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/jetson/NAV/build/arm_pkg/build install --record /home/jetson/NAV/build/arm_pkg/install.log --install-scripts $base/lib/arm_pkg --single-version-externally-managed install_data

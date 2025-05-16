@@ -1,0 +1,111 @@
+[0.000000] (-) TimerEvent: {}
+[0.000774] (arm_pkg) JobQueued: {'identifier': 'arm_pkg', 'dependencies': OrderedDict()}
+[0.000971] (arm_pkg) JobStarted: {'identifier': 'arm_pkg'}
+[0.095403] (-) TimerEvent: {}
+[0.197021] (-) TimerEvent: {}
+[0.298325] (-) TimerEvent: {}
+[0.399374] (-) TimerEvent: {}
+[0.500851] (-) TimerEvent: {}
+[0.603372] (-) TimerEvent: {}
+[0.704072] (-) TimerEvent: {}
+[0.804843] (-) TimerEvent: {}
+[0.905528] (-) TimerEvent: {}
+[1.006813] (-) TimerEvent: {}
+[1.108088] (-) TimerEvent: {}
+[1.208831] (-) TimerEvent: {}
+[1.309522] (-) TimerEvent: {}
+[1.410200] (-) TimerEvent: {}
+[1.510916] (-) TimerEvent: {}
+[1.611665] (-) TimerEvent: {}
+[1.712489] (-) TimerEvent: {}
+[1.813200] (-) TimerEvent: {}
+[1.914888] (-) TimerEvent: {}
+[2.015943] (-) TimerEvent: {}
+[2.117095] (-) TimerEvent: {}
+[2.217830] (-) TimerEvent: {}
+[2.318493] (-) TimerEvent: {}
+[2.419742] (-) TimerEvent: {}
+[2.524143] (-) TimerEvent: {}
+[2.625210] (-) TimerEvent: {}
+[2.725851] (-) TimerEvent: {}
+[2.826506] (-) TimerEvent: {}
+[2.927748] (-) TimerEvent: {}
+[3.029017] (-) TimerEvent: {}
+[3.130274] (-) TimerEvent: {}
+[3.231507] (-) TimerEvent: {}
+[3.332742] (-) TimerEvent: {}
+[3.433775] (-) TimerEvent: {}
+[3.534833] (-) TimerEvent: {}
+[3.635842] (-) TimerEvent: {}
+[3.736703] (-) TimerEvent: {}
+[3.838291] (-) TimerEvent: {}
+[3.939583] (-) TimerEvent: {}
+[4.040970] (-) TimerEvent: {}
+[4.142141] (-) TimerEvent: {}
+[4.243186] (-) TimerEvent: {}
+[4.344628] (-) TimerEvent: {}
+[4.445943] (-) TimerEvent: {}
+[4.546688] (-) TimerEvent: {}
+[4.647343] (-) TimerEvent: {}
+[4.747993] (-) TimerEvent: {}
+[4.848722] (-) TimerEvent: {}
+[4.949318] (-) TimerEvent: {}
+[5.049999] (-) TimerEvent: {}
+[5.150670] (-) TimerEvent: {}
+[5.251349] (-) TimerEvent: {}
+[5.352040] (-) TimerEvent: {}
+[5.452771] (-) TimerEvent: {}
+[5.553464] (-) TimerEvent: {}
+[5.654120] (-) TimerEvent: {}
+[5.754825] (-) TimerEvent: {}
+[5.855528] (-) TimerEvent: {}
+[5.956192] (-) TimerEvent: {}
+[6.056964] (-) TimerEvent: {}
+[6.157735] (-) TimerEvent: {}
+[6.258411] (-) TimerEvent: {}
+[6.359162] (-) TimerEvent: {}
+[6.459968] (-) TimerEvent: {}
+[6.514956] (arm_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/arm_pkg', 'build', '--build-base', '/home/jetson/NAV/build/arm_pkg/build', 'install', '--record', '/home/jetson/NAV/build/arm_pkg/install.log', '--install-scripts', '$base/lib/arm_pkg', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/NAV/src/arm_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'SSH_AGENT_PID': '7428', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/home/jetson/catkin_ws/devel/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'PS1': '(venvnav) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '7228', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/NAV/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1422019085902', 'JOURNAL_STREAM': '8:36815', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/jetson/NAV/venvnav/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7465,unix/nano:/tmp/.ICE-unix/7465', 'INVOCATION_ID': '9e4a7d2257324fd1808a77ef988be7bc', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5b1f562e_c7b5_486a_8dd0_2192d7ebbb8f', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.82', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jetson/NAV/install/arm_pkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'VIRTUAL_ENV': '/home/jetson/NAV/venvnav', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/NAV/build/arm_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/NAV/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages:/home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/catkin_ws/devel', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[6.560182] (-) TimerEvent: {}
+[6.660990] (-) TimerEvent: {}
+[6.761606] (-) TimerEvent: {}
+[6.862224] (-) TimerEvent: {}
+[6.962882] (-) TimerEvent: {}
+[7.063534] (-) TimerEvent: {}
+[7.164132] (-) TimerEvent: {}
+[7.264794] (-) TimerEvent: {}
+[7.365434] (-) TimerEvent: {}
+[7.466147] (-) TimerEvent: {}
+[7.566806] (-) TimerEvent: {}
+[7.667482] (-) TimerEvent: {}
+[7.676605] (arm_pkg) StderrLine: {'line': b"/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[7.677463] (arm_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.767634] (-) TimerEvent: {}
+[7.810547] (arm_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[7.813622] (arm_pkg) StdoutLine: {'line': b'writing ../../build/arm_pkg/arm_pkg.egg-info/PKG-INFO\n'}
+[7.819437] (arm_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/arm_pkg/arm_pkg.egg-info/dependency_links.txt\n'}
+[7.820196] (arm_pkg) StdoutLine: {'line': b'writing entry points to ../../build/arm_pkg/arm_pkg.egg-info/entry_points.txt\n'}
+[7.820911] (arm_pkg) StdoutLine: {'line': b'writing requirements to ../../build/arm_pkg/arm_pkg.egg-info/requires.txt\n'}
+[7.821546] (arm_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/arm_pkg/arm_pkg.egg-info/top_level.txt\n'}
+[7.840735] (arm_pkg) StdoutLine: {'line': b"reading manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'\n"}
+[7.845060] (arm_pkg) StdoutLine: {'line': b"writing manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'\n"}
+[7.845765] (arm_pkg) StdoutLine: {'line': b'running build\n'}
+[7.846147] (arm_pkg) StdoutLine: {'line': b'running build_py\n'}
+[7.851339] (arm_pkg) StdoutLine: {'line': b'copying arm_pkg/arm.py -> /home/jetson/NAV/build/arm_pkg/build/lib/arm_pkg\n'}
+[7.852376] (arm_pkg) StdoutLine: {'line': b'running install\n'}
+[7.855366] (arm_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[7.859544] (arm_pkg) StdoutLine: {'line': b'copying /home/jetson/NAV/build/arm_pkg/build/lib/arm_pkg/arm.py -> /home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages/arm_pkg\n'}
+[7.862248] (arm_pkg) StdoutLine: {'line': b'byte-compiling /home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages/arm_pkg/arm.py to arm.cpython-38.pyc\n'}
+[7.864016] (arm_pkg) StdoutLine: {'line': b'running install_data\n'}
+[7.866784] (arm_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.867731] (-) TimerEvent: {}
+[7.875000] (arm_pkg) StdoutLine: {'line': b"removing '/home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages/arm_pkg-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.879387] (arm_pkg) StdoutLine: {'line': b'Copying ../../build/arm_pkg/arm_pkg.egg-info to /home/jetson/NAV/install/arm_pkg/lib/python3.8/site-packages/arm_pkg-0.0.0-py3.8.egg-info\n'}
+[7.884159] (arm_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[7.958670] (arm_pkg) StdoutLine: {'line': b'Installing arm_node script to /home/jetson/NAV/install/arm_pkg/lib/arm_pkg\n'}
+[7.963698] (arm_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/NAV/build/arm_pkg/install.log'\n"}
+[7.971409] (-) TimerEvent: {}
+[8.067434] (arm_pkg) CommandEnded: {'returncode': 0}
+[8.071507] (-) TimerEvent: {}
+[8.151977] (arm_pkg) JobEnded: {'identifier': 'arm_pkg', 'rc': 0}
+[8.154331] (-) EventReactorShutdown: {}

@@ -1,0 +1,902 @@
+[2.546s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.547s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f85547e20>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f85547e20>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f856c6400>)
+[3.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.891s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetson/NAV'
+[3.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.959s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.959s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.959s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.960s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.960s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.961s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.961s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.961s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.961s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.973s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extensions ['ignore', 'ignore_ament_install']
+[3.973s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extension 'ignore'
+[3.973s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extension 'ignore_ament_install'
+[3.973s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extensions ['colcon_pkg']
+[3.974s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extension 'colcon_pkg'
+[3.974s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extensions ['colcon_meta']
+[3.974s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extension 'colcon_meta'
+[3.974s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extensions ['ros']
+[3.974s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extension 'ros'
+[3.975s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extensions ['cmake', 'python']
+[3.975s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extension 'cmake'
+[3.975s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extension 'python'
+[3.975s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extensions ['python_setup_py']
+[3.975s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav) by extension 'python_setup_py'
+[3.976s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extensions ['ignore', 'ignore_ament_install']
+[3.976s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extension 'ignore'
+[3.976s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extension 'ignore_ament_install'
+[3.977s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extensions ['colcon_pkg']
+[3.977s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extension 'colcon_pkg'
+[3.977s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extensions ['colcon_meta']
+[3.977s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extension 'colcon_meta'
+[3.977s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extensions ['ros']
+[3.977s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extension 'ros'
+[3.978s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extensions ['cmake', 'python']
+[3.978s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extension 'cmake'
+[3.978s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extension 'python'
+[3.978s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extensions ['python_setup_py']
+[3.978s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/bin) by extension 'python_setup_py'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extensions ['ignore', 'ignore_ament_install']
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extension 'ignore'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extension 'ignore_ament_install'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extensions ['colcon_pkg']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extension 'colcon_pkg'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extensions ['colcon_meta']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extension 'colcon_meta'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extensions ['ros']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extension 'ros'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extensions ['cmake', 'python']
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extension 'cmake'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extension 'python'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extensions ['python_setup_py']
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/include) by extension 'python_setup_py'
+[3.985s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extensions ['ignore', 'ignore_ament_install']
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extension 'ignore'
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extension 'ignore_ament_install'
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extensions ['colcon_pkg']
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extension 'colcon_pkg'
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extensions ['colcon_meta']
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extension 'colcon_meta'
+[3.987s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extensions ['ros']
+[3.987s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extension 'ros'
+[3.987s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extensions ['cmake', 'python']
+[3.987s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extension 'cmake'
+[3.987s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extension 'python'
+[3.988s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extensions ['python_setup_py']
+[3.988s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib) by extension 'python_setup_py'
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extensions ['ignore', 'ignore_ament_install']
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extension 'ignore'
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extension 'ignore_ament_install'
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extensions ['colcon_pkg']
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extension 'colcon_pkg'
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extensions ['colcon_meta']
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extension 'colcon_meta'
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extensions ['ros']
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extension 'ros'
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extensions ['cmake', 'python']
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extension 'cmake'
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extension 'python'
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extensions ['python_setup_py']
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8) by extension 'python_setup_py'
+[3.992s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extensions ['ignore', 'ignore_ament_install']
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extension 'ignore'
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extension 'ignore_ament_install'
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extensions ['colcon_pkg']
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extension 'colcon_pkg'
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extensions ['colcon_meta']
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extension 'colcon_meta'
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extensions ['ros']
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extension 'ros'
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extensions ['cmake', 'python']
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extension 'cmake'
+[3.995s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extension 'python'
+[3.995s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extensions ['python_setup_py']
+[3.995s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages) by extension 'python_setup_py'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extension 'ignore'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extension 'ignore_ament_install'
+[4.000s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extensions ['colcon_pkg']
+[4.000s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extension 'colcon_pkg'
+[4.000s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extensions ['colcon_meta']
+[4.000s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extension 'colcon_meta'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extensions ['ros']
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extension 'ros'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extensions ['cmake', 'python']
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extension 'cmake'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extension 'python'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extensions ['python_setup_py']
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/__pycache__) by extension 'python_setup_py'
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extensions ['ignore', 'ignore_ament_install']
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extension 'ignore'
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extension 'ignore_ament_install'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extensions ['colcon_pkg']
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extension 'colcon_pkg'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extensions ['colcon_meta']
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extension 'colcon_meta'
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extensions ['ros']
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extension 'ros'
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extensions ['cmake', 'python']
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extension 'cmake'
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extension 'python'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extensions ['python_setup_py']
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip) by extension 'python_setup_py'
+[4.007s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.007s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extension 'ignore'
+[4.007s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extension 'ignore_ament_install'
+[4.007s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extensions ['colcon_pkg']
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extension 'colcon_pkg'
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extensions ['colcon_meta']
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extension 'colcon_meta'
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extensions ['ros']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extension 'ros'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extensions ['cmake', 'python']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extension 'cmake'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extension 'python'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extensions ['python_setup_py']
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/__pycache__) by extension 'python_setup_py'
+[4.011s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extensions ['ignore', 'ignore_ament_install']
+[4.011s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extension 'ignore'
+[4.011s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extension 'ignore_ament_install'
+[4.011s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extensions ['colcon_pkg']
+[4.012s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extension 'colcon_pkg'
+[4.012s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extensions ['colcon_meta']
+[4.012s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extension 'colcon_meta'
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extensions ['ros']
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extension 'ros'
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extensions ['cmake', 'python']
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extension 'cmake'
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extension 'python'
+[4.014s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extensions ['python_setup_py']
+[4.014s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal) by extension 'python_setup_py'
+[4.015s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.015s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extension 'ignore'
+[4.015s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extension 'ignore_ament_install'
+[4.016s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extensions ['colcon_pkg']
+[4.016s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extension 'colcon_pkg'
+[4.016s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extensions ['colcon_meta']
+[4.016s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extension 'colcon_meta'
+[4.017s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extensions ['ros']
+[4.017s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extension 'ros'
+[4.017s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extensions ['cmake', 'python']
+[4.017s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extension 'cmake'
+[4.017s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extension 'python'
+[4.018s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extensions ['python_setup_py']
+[4.018s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/__pycache__) by extension 'python_setup_py'
+[4.019s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extensions ['ignore', 'ignore_ament_install']
+[4.019s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extension 'ignore'
+[4.019s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extension 'ignore_ament_install'
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extensions ['colcon_pkg']
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extension 'colcon_pkg'
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extensions ['colcon_meta']
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extension 'colcon_meta'
+[4.021s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extensions ['ros']
+[4.021s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extension 'ros'
+[4.021s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extensions ['cmake', 'python']
+[4.021s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extension 'cmake'
+[4.022s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extension 'python'
+[4.022s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extensions ['python_setup_py']
+[4.022s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli) by extension 'python_setup_py'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extension 'ignore'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extension 'ignore_ament_install'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extensions ['colcon_pkg']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extension 'colcon_pkg'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extensions ['colcon_meta']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extension 'colcon_meta'
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extensions ['ros']
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extension 'ros'
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extensions ['cmake', 'python']
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extension 'cmake'
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extension 'python'
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extensions ['python_setup_py']
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/cli/__pycache__) by extension 'python_setup_py'
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extensions ['ignore', 'ignore_ament_install']
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extension 'ignore'
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extension 'ignore_ament_install'
+[4.028s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extensions ['colcon_pkg']
+[4.028s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extension 'colcon_pkg'
+[4.028s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extensions ['colcon_meta']
+[4.028s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extension 'colcon_meta'
+[4.029s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extensions ['ros']
+[4.029s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extension 'ros'
+[4.029s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extensions ['cmake', 'python']
+[4.029s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extension 'cmake'
+[4.030s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extension 'python'
+[4.030s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extensions ['python_setup_py']
+[4.030s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands) by extension 'python_setup_py'
+[4.031s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.031s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extension 'ignore'
+[4.031s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extension 'ignore_ament_install'
+[4.032s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extensions ['colcon_pkg']
+[4.032s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extension 'colcon_pkg'
+[4.032s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extensions ['colcon_meta']
+[4.033s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extension 'colcon_meta'
+[4.033s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extensions ['ros']
+[4.034s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extension 'ros'
+[4.035s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extensions ['cmake', 'python']
+[4.035s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extension 'cmake'
+[4.035s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extension 'python'
+[4.035s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extensions ['python_setup_py']
+[4.035s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/commands/__pycache__) by extension 'python_setup_py'
+[4.036s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extensions ['ignore', 'ignore_ament_install']
+[4.037s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extension 'ignore'
+[4.037s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extension 'ignore_ament_install'
+[4.037s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extensions ['colcon_pkg']
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extension 'colcon_pkg'
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extensions ['colcon_meta']
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extension 'colcon_meta'
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extensions ['ros']
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extension 'ros'
+[4.039s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extensions ['cmake', 'python']
+[4.039s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extension 'cmake'
+[4.039s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extension 'python'
+[4.039s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extensions ['python_setup_py']
+[4.039s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions) by extension 'python_setup_py'
+[4.040s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.041s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extension 'ignore'
+[4.041s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extension 'ignore_ament_install'
+[4.041s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extensions ['colcon_pkg']
+[4.042s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extension 'colcon_pkg'
+[4.042s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extensions ['colcon_meta']
+[4.042s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extension 'colcon_meta'
+[4.042s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extensions ['ros']
+[4.042s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extension 'ros'
+[4.043s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extensions ['cmake', 'python']
+[4.043s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extension 'cmake'
+[4.043s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extension 'python'
+[4.043s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extensions ['python_setup_py']
+[4.043s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/distributions/__pycache__) by extension 'python_setup_py'
+[4.044s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extensions ['ignore', 'ignore_ament_install']
+[4.045s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extension 'ignore'
+[4.045s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extension 'ignore_ament_install'
+[4.045s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extensions ['colcon_pkg']
+[4.046s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extension 'colcon_pkg'
+[4.046s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extensions ['colcon_meta']
+[4.046s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extension 'colcon_meta'
+[4.046s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extensions ['ros']
+[4.047s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extension 'ros'
+[4.047s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extensions ['cmake', 'python']
+[4.047s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extension 'cmake'
+[4.047s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extension 'python'
+[4.047s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extensions ['python_setup_py']
+[4.048s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index) by extension 'python_setup_py'
+[4.049s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.049s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extension 'ignore'
+[4.049s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extension 'ignore_ament_install'
+[4.049s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extensions ['colcon_pkg']
+[4.050s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extension 'colcon_pkg'
+[4.050s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extensions ['colcon_meta']
+[4.050s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extension 'colcon_meta'
+[4.050s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extensions ['ros']
+[4.050s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extension 'ros'
+[4.051s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extensions ['cmake', 'python']
+[4.051s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extension 'cmake'
+[4.051s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extension 'python'
+[4.051s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extensions ['python_setup_py']
+[4.051s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/index/__pycache__) by extension 'python_setup_py'
+[4.052s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extensions ['ignore', 'ignore_ament_install']
+[4.053s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extension 'ignore'
+[4.053s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extension 'ignore_ament_install'
+[4.053s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extensions ['colcon_pkg']
+[4.053s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extension 'colcon_pkg'
+[4.054s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extensions ['colcon_meta']
+[4.054s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extension 'colcon_meta'
+[4.054s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extensions ['ros']
+[4.054s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extension 'ros'
+[4.055s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extensions ['cmake', 'python']
+[4.055s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extension 'cmake'
+[4.055s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extension 'python'
+[4.055s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extensions ['python_setup_py']
+[4.055s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models) by extension 'python_setup_py'
+[4.056s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.057s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extension 'ignore'
+[4.057s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extension 'ignore_ament_install'
+[4.057s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extensions ['colcon_pkg']
+[4.057s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extension 'colcon_pkg'
+[4.057s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extensions ['colcon_meta']
+[4.058s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extension 'colcon_meta'
+[4.058s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extensions ['ros']
+[4.058s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extension 'ros'
+[4.058s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extensions ['cmake', 'python']
+[4.059s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extension 'cmake'
+[4.059s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extension 'python'
+[4.059s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extensions ['python_setup_py']
+[4.059s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/models/__pycache__) by extension 'python_setup_py'
+[4.060s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extensions ['ignore', 'ignore_ament_install']
+[4.060s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extension 'ignore'
+[4.061s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extension 'ignore_ament_install'
+[4.061s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extensions ['colcon_pkg']
+[4.061s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extension 'colcon_pkg'
+[4.061s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extensions ['colcon_meta']
+[4.061s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extension 'colcon_meta'
+[4.062s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extensions ['ros']
+[4.062s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extension 'ros'
+[4.062s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extensions ['cmake', 'python']
+[4.062s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extension 'cmake'
+[4.063s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extension 'python'
+[4.063s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extensions ['python_setup_py']
+[4.063s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network) by extension 'python_setup_py'
+[4.064s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.064s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extension 'ignore'
+[4.065s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extension 'ignore_ament_install'
+[4.065s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extensions ['colcon_pkg']
+[4.065s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extension 'colcon_pkg'
+[4.065s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extensions ['colcon_meta']
+[4.065s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extension 'colcon_meta'
+[4.066s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extensions ['ros']
+[4.066s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extension 'ros'
+[4.066s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extensions ['cmake', 'python']
+[4.066s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extension 'cmake'
+[4.066s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extension 'python'
+[4.067s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extensions ['python_setup_py']
+[4.067s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/network/__pycache__) by extension 'python_setup_py'
+[4.068s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extensions ['ignore', 'ignore_ament_install']
+[4.068s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extension 'ignore'
+[4.068s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extension 'ignore_ament_install'
+[4.069s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extensions ['colcon_pkg']
+[4.069s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extension 'colcon_pkg'
+[4.069s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extensions ['colcon_meta']
+[4.069s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extension 'colcon_meta'
+[4.070s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extensions ['ros']
+[4.070s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extension 'ros'
+[4.070s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extensions ['cmake', 'python']
+[4.070s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extension 'cmake'
+[4.071s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extension 'python'
+[4.071s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extensions ['python_setup_py']
+[4.071s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations) by extension 'python_setup_py'
+[4.072s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.072s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extension 'ignore'
+[4.073s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extension 'ignore_ament_install'
+[4.073s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extensions ['colcon_pkg']
+[4.073s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extension 'colcon_pkg'
+[4.073s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extensions ['colcon_meta']
+[4.073s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extension 'colcon_meta'
+[4.074s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extensions ['ros']
+[4.074s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extension 'ros'
+[4.074s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extensions ['cmake', 'python']
+[4.075s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extension 'cmake'
+[4.075s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extension 'python'
+[4.075s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extensions ['python_setup_py']
+[4.075s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/__pycache__) by extension 'python_setup_py'
+[4.076s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extensions ['ignore', 'ignore_ament_install']
+[4.077s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extension 'ignore'
+[4.077s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extension 'ignore_ament_install'
+[4.077s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extensions ['colcon_pkg']
+[4.077s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extension 'colcon_pkg'
+[4.077s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extensions ['colcon_meta']
+[4.077s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extension 'colcon_meta'
+[4.078s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extensions ['ros']
+[4.078s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extension 'ros'
+[4.078s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extensions ['cmake', 'python']
+[4.079s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extension 'cmake'
+[4.079s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extension 'python'
+[4.079s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extensions ['python_setup_py']
+[4.079s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build) by extension 'python_setup_py'
+[4.080s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.081s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extension 'ignore'
+[4.081s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extension 'ignore_ament_install'
+[4.081s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extensions ['colcon_pkg']
+[4.081s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extension 'colcon_pkg'
+[4.082s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extensions ['colcon_meta']
+[4.082s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extension 'colcon_meta'
+[4.082s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extensions ['ros']
+[4.082s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extension 'ros'
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extensions ['cmake', 'python']
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extension 'cmake'
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extension 'python'
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extensions ['python_setup_py']
+[4.084s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/build/__pycache__) by extension 'python_setup_py'
+[4.085s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extensions ['ignore', 'ignore_ament_install']
+[4.085s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extension 'ignore'
+[4.085s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extension 'ignore_ament_install'
+[4.085s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extensions ['colcon_pkg']
+[4.086s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extension 'colcon_pkg'
+[4.086s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extensions ['colcon_meta']
+[4.086s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extension 'colcon_meta'
+[4.086s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extensions ['ros']
+[4.086s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extension 'ros'
+[4.087s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extensions ['cmake', 'python']
+[4.087s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extension 'cmake'
+[4.087s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extension 'python'
+[4.087s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extensions ['python_setup_py']
+[4.087s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install) by extension 'python_setup_py'
+[4.088s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extension 'ignore'
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extension 'ignore_ament_install'
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extensions ['colcon_pkg']
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extension 'colcon_pkg'
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extensions ['colcon_meta']
+[4.090s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extension 'colcon_meta'
+[4.090s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extensions ['ros']
+[4.090s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extension 'ros'
+[4.090s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extensions ['cmake', 'python']
+[4.091s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extension 'cmake'
+[4.091s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extension 'python'
+[4.091s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extensions ['python_setup_py']
+[4.091s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/operations/install/__pycache__) by extension 'python_setup_py'
+[4.092s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extensions ['ignore', 'ignore_ament_install']
+[4.092s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extension 'ignore'
+[4.093s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extension 'ignore_ament_install'
+[4.093s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extensions ['colcon_pkg']
+[4.093s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extension 'colcon_pkg'
+[4.093s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extensions ['colcon_meta']
+[4.094s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extension 'colcon_meta'
+[4.094s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extensions ['ros']
+[4.094s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extension 'ros'
+[4.094s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extensions ['cmake', 'python']
+[4.095s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extension 'cmake'
+[4.095s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extension 'python'
+[4.095s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extensions ['python_setup_py']
+[4.095s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req) by extension 'python_setup_py'
+[4.096s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.097s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extension 'ignore'
+[4.097s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extension 'ignore_ament_install'
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extensions ['colcon_pkg']
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extension 'colcon_pkg'
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extensions ['colcon_meta']
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extension 'colcon_meta'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extensions ['ros']
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extension 'ros'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extensions ['cmake', 'python']
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extension 'cmake'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extension 'python'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extensions ['python_setup_py']
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/req/__pycache__) by extension 'python_setup_py'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extensions ['ignore', 'ignore_ament_install']
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extension 'ignore'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extension 'ignore_ament_install'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extensions ['colcon_pkg']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extension 'colcon_pkg'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extensions ['colcon_meta']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extension 'colcon_meta'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extensions ['ros']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extension 'ros'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extensions ['cmake', 'python']
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extension 'cmake'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extension 'python'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extensions ['python_setup_py']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils) by extension 'python_setup_py'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extension 'ignore'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extension 'ignore_ament_install'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extensions ['colcon_pkg']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extension 'colcon_pkg'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extensions ['colcon_meta']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extension 'colcon_meta'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extensions ['ros']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extension 'ros'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extensions ['cmake', 'python']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extension 'cmake'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extension 'python'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extensions ['python_setup_py']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/utils/__pycache__) by extension 'python_setup_py'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extensions ['ignore', 'ignore_ament_install']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extension 'ignore'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extension 'ignore_ament_install'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extensions ['colcon_pkg']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extension 'colcon_pkg'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extensions ['colcon_meta']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extension 'colcon_meta'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extensions ['ros']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extension 'ros'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extensions ['cmake', 'python']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extension 'cmake'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extension 'python'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extensions ['python_setup_py']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs) by extension 'python_setup_py'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extension 'ignore'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extension 'ignore_ament_install'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extensions ['colcon_pkg']
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extension 'colcon_pkg'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extensions ['colcon_meta']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extension 'colcon_meta'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extensions ['ros']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extension 'ros'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extensions ['cmake', 'python']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extension 'cmake'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extension 'python'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extensions ['python_setup_py']
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_internal/vcs/__pycache__) by extension 'python_setup_py'
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extensions ['ignore', 'ignore_ament_install']
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extension 'ignore'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extension 'ignore_ament_install'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extensions ['colcon_pkg']
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extension 'colcon_pkg'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extensions ['colcon_meta']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extension 'colcon_meta'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extensions ['ros']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extension 'ros'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extensions ['cmake', 'python']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extension 'cmake'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extension 'python'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extensions ['python_setup_py']
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor) by extension 'python_setup_py'
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extension 'ignore'
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extension 'ignore_ament_install'
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extensions ['colcon_pkg']
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extension 'colcon_pkg'
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extensions ['colcon_meta']
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extension 'colcon_meta'
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extensions ['ros']
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extension 'ros'
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extensions ['cmake', 'python']
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extension 'cmake'
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extension 'python'
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extensions ['python_setup_py']
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip/_vendor/__pycache__) by extension 'python_setup_py'
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extension 'ignore'
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extension 'ignore_ament_install'
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extensions ['colcon_pkg']
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extension 'colcon_pkg'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extensions ['colcon_meta']
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extension 'colcon_meta'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extensions ['ros']
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extension 'ros'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extensions ['cmake', 'python']
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extension 'cmake'
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extension 'python'
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extensions ['python_setup_py']
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pip-20.0.2.dist-info) by extension 'python_setup_py'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extensions ['ignore', 'ignore_ament_install']
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extension 'ignore'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extension 'ignore_ament_install'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extensions ['colcon_pkg']
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extension 'colcon_pkg'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extensions ['colcon_meta']
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extension 'colcon_meta'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extensions ['ros']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extension 'ros'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extensions ['cmake', 'python']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extension 'cmake'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extension 'python'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extensions ['python_setup_py']
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources) by extension 'python_setup_py'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extension 'ignore'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extension 'ignore_ament_install'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extensions ['colcon_pkg']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extension 'colcon_pkg'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extensions ['colcon_meta']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extension 'colcon_meta'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extensions ['ros']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extension 'ros'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extensions ['cmake', 'python']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extension 'cmake'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extension 'python'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extensions ['python_setup_py']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/__pycache__) by extension 'python_setup_py'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extensions ['ignore', 'ignore_ament_install']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extension 'ignore'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extension 'ignore_ament_install'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extensions ['colcon_pkg']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extension 'colcon_pkg'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extensions ['colcon_meta']
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extension 'colcon_meta'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extensions ['ros']
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extension 'ros'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extensions ['cmake', 'python']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extension 'cmake'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extension 'python'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extensions ['python_setup_py']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor) by extension 'python_setup_py'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extension 'ignore'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extension 'ignore_ament_install'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extensions ['colcon_pkg']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extension 'colcon_pkg'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extensions ['colcon_meta']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extension 'colcon_meta'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extensions ['ros']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extension 'ros'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extensions ['cmake', 'python']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extension 'cmake'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extension 'python'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extensions ['python_setup_py']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__) by extension 'python_setup_py'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extensions ['ignore', 'ignore_ament_install']
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extension 'ignore'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extension 'ignore_ament_install'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extensions ['colcon_pkg']
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extension 'colcon_pkg'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extensions ['colcon_meta']
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extension 'colcon_meta'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extensions ['ros']
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extension 'ros'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extensions ['cmake', 'python']
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extension 'cmake'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extension 'python'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extensions ['python_setup_py']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging) by extension 'python_setup_py'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extension 'ignore'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extension 'ignore_ament_install'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extensions ['colcon_pkg']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extension 'colcon_pkg'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extensions ['colcon_meta']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extension 'colcon_meta'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extensions ['ros']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extension 'ros'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extensions ['cmake', 'python']
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extension 'cmake'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extension 'python'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extensions ['python_setup_py']
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__) by extension 'python_setup_py'
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extensions ['ignore', 'ignore_ament_install']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extension 'ignore'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extension 'ignore_ament_install'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extensions ['colcon_pkg']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extension 'colcon_pkg'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extensions ['colcon_meta']
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extension 'colcon_meta'
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extensions ['ros']
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extension 'ros'
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extensions ['cmake', 'python']
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extension 'cmake'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extension 'python'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extensions ['python_setup_py']
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern) by extension 'python_setup_py'
+[4.162s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.162s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extension 'ignore'
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extension 'ignore_ament_install'
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extensions ['colcon_pkg']
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extension 'colcon_pkg'
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extensions ['colcon_meta']
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extension 'colcon_meta'
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extensions ['ros']
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extension 'ros'
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extensions ['cmake', 'python']
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extension 'cmake'
+[4.165s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extension 'python'
+[4.165s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extensions ['python_setup_py']
+[4.165s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources/extern/__pycache__) by extension 'python_setup_py'
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extension 'ignore'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extension 'ignore_ament_install'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extensions ['colcon_pkg']
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extension 'colcon_pkg'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extensions ['colcon_meta']
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extension 'colcon_meta'
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extensions ['ros']
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extension 'ros'
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extensions ['cmake', 'python']
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extension 'cmake'
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extension 'python'
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extensions ['python_setup_py']
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/pkg_resources-0.0.0.dist-info) by extension 'python_setup_py'
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extensions ['ignore', 'ignore_ament_install']
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extension 'ignore'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extension 'ignore_ament_install'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extensions ['colcon_pkg']
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extension 'colcon_pkg'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extensions ['colcon_meta']
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extension 'colcon_meta'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extensions ['ros']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extension 'ros'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extensions ['cmake', 'python']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extension 'cmake'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extension 'python'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extensions ['python_setup_py']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools) by extension 'python_setup_py'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extension 'ignore'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extension 'ignore_ament_install'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extensions ['colcon_pkg']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extension 'colcon_pkg'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extensions ['colcon_meta']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extension 'colcon_meta'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extensions ['ros']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extension 'ros'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extensions ['cmake', 'python']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extension 'cmake'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extension 'python'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extensions ['python_setup_py']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/__pycache__) by extension 'python_setup_py'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extensions ['ignore', 'ignore_ament_install']
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extension 'ignore'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extension 'ignore_ament_install'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extensions ['colcon_pkg']
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extension 'colcon_pkg'
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extensions ['colcon_meta']
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extension 'colcon_meta'
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extensions ['ros']
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extension 'ros'
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extensions ['cmake', 'python']
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extension 'cmake'
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extension 'python'
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extensions ['python_setup_py']
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor) by extension 'python_setup_py'
+[4.189s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.189s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extension 'ignore'
+[4.189s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extension 'ignore_ament_install'
+[4.190s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extensions ['colcon_pkg']
+[4.190s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extension 'colcon_pkg'
+[4.190s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extensions ['colcon_meta']
+[4.190s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extension 'colcon_meta'
+[4.191s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extensions ['ros']
+[4.191s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extension 'ros'
+[4.191s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extensions ['cmake', 'python']
+[4.191s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extension 'cmake'
+[4.192s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extension 'python'
+[4.192s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extensions ['python_setup_py']
+[4.192s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/__pycache__) by extension 'python_setup_py'
+[4.193s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extensions ['ignore', 'ignore_ament_install']
+[4.193s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extension 'ignore'
+[4.194s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extension 'ignore_ament_install'
+[4.194s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extensions ['colcon_pkg']
+[4.194s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extension 'colcon_pkg'
+[4.194s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extensions ['colcon_meta']
+[4.195s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extension 'colcon_meta'
+[4.195s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extensions ['ros']
+[4.195s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extension 'ros'
+[4.195s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extensions ['cmake', 'python']
+[4.195s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extension 'cmake'
+[4.196s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extension 'python'
+[4.196s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extensions ['python_setup_py']
+[4.196s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging) by extension 'python_setup_py'
+[4.197s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.197s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extension 'ignore'
+[4.198s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extension 'ignore_ament_install'
+[4.198s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extensions ['colcon_pkg']
+[4.198s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extension 'colcon_pkg'
+[4.198s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extensions ['colcon_meta']
+[4.198s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extension 'colcon_meta'
+[4.199s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extensions ['ros']
+[4.199s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extension 'ros'
+[4.199s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extensions ['cmake', 'python']
+[4.200s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extension 'cmake'
+[4.200s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extension 'python'
+[4.200s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extensions ['python_setup_py']
+[4.200s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__) by extension 'python_setup_py'
+[4.201s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extensions ['ignore', 'ignore_ament_install']
+[4.202s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extension 'ignore'
+[4.202s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extension 'ignore_ament_install'
+[4.202s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extensions ['colcon_pkg']
+[4.202s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extension 'colcon_pkg'
+[4.203s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extensions ['colcon_meta']
+[4.203s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extension 'colcon_meta'
+[4.203s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extensions ['ros']
+[4.203s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extension 'ros'
+[4.204s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extensions ['cmake', 'python']
+[4.204s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extension 'cmake'
+[4.204s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extension 'python'
+[4.204s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extensions ['python_setup_py']
+[4.204s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command) by extension 'python_setup_py'
+[4.209s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extension 'ignore'
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extension 'ignore_ament_install'
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extensions ['colcon_pkg']
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extension 'colcon_pkg'
+[4.211s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extensions ['colcon_meta']
+[4.211s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extension 'colcon_meta'
+[4.211s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extensions ['ros']
+[4.211s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extension 'ros'
+[4.212s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extensions ['cmake', 'python']
+[4.212s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extension 'cmake'
+[4.212s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extension 'python'
+[4.212s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extensions ['python_setup_py']
+[4.212s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/command/__pycache__) by extension 'python_setup_py'
+[4.213s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extensions ['ignore', 'ignore_ament_install']
+[4.214s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extension 'ignore'
+[4.214s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extension 'ignore_ament_install'
+[4.214s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extensions ['colcon_pkg']
+[4.214s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extension 'colcon_pkg'
+[4.214s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extensions ['colcon_meta']
+[4.215s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extension 'colcon_meta'
+[4.215s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extensions ['ros']
+[4.215s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extension 'ros'
+[4.215s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extensions ['cmake', 'python']
+[4.216s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extension 'cmake'
+[4.216s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extension 'python'
+[4.216s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extensions ['python_setup_py']
+[4.216s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern) by extension 'python_setup_py'
+[4.217s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.217s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extension 'ignore'
+[4.218s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extension 'ignore_ament_install'
+[4.218s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extensions ['colcon_pkg']
+[4.218s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extension 'colcon_pkg'
+[4.218s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extensions ['colcon_meta']
+[4.218s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extension 'colcon_meta'
+[4.219s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extensions ['ros']
+[4.219s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extension 'ros'
+[4.219s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extensions ['cmake', 'python']
+[4.219s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extension 'cmake'
+[4.220s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extension 'python'
+[4.220s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extensions ['python_setup_py']
+[4.220s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools/extern/__pycache__) by extension 'python_setup_py'
+[4.221s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extensions ['ignore', 'ignore_ament_install']
+[4.221s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extension 'ignore'
+[4.222s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extension 'ignore_ament_install'
+[4.222s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extensions ['colcon_pkg']
+[4.222s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extension 'colcon_pkg'
+[4.222s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extensions ['colcon_meta']
+[4.222s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extension 'colcon_meta'
+[4.223s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extensions ['ros']
+[4.223s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extension 'ros'
+[4.223s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extensions ['cmake', 'python']
+[4.223s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extension 'cmake'
+[4.224s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extension 'python'
+[4.224s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extensions ['python_setup_py']
+[4.224s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/lib/python3.8/site-packages/setuptools-44.0.0.dist-info) by extension 'python_setup_py'
+[4.225s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extensions ['ignore', 'ignore_ament_install']
+[4.226s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extension 'ignore'
+[4.226s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extension 'ignore_ament_install'
+[4.226s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extensions ['colcon_pkg']
+[4.226s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extension 'colcon_pkg'
+[4.226s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extensions ['colcon_meta']
+[4.227s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extension 'colcon_meta'
+[4.227s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extensions ['ros']
+[4.227s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extension 'ros'
+[4.227s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extensions ['cmake', 'python']
+[4.228s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extension 'cmake'
+[4.228s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extension 'python'
+[4.228s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extensions ['python_setup_py']
+[4.228s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share) by extension 'python_setup_py'
+[4.229s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extensions ['ignore', 'ignore_ament_install']
+[4.229s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extension 'ignore'
+[4.230s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extension 'ignore_ament_install'
+[4.230s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extensions ['colcon_pkg']
+[4.230s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extension 'colcon_pkg'
+[4.230s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extensions ['colcon_meta']
+[4.230s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extension 'colcon_meta'
+[4.231s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extensions ['ros']
+[4.231s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extension 'ros'
+[4.231s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extensions ['cmake', 'python']
+[4.231s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extension 'cmake'
+[4.232s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extension 'python'
+[4.232s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extensions ['python_setup_py']
+[4.232s] Level 1:colcon.colcon_core.package_identification:_identify(venvnav/share/python-wheels) by extension 'python_setup_py'
+[4.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.376s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 256 installed packages in /opt/ros/foxy
+[4.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.895s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.901s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.965s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.966s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.966s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.587s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.615s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.617s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/NAV/install/local_setup.ps1'
+[5.623s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/NAV/install/_local_setup_util_ps1.py'
+[5.631s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/NAV/install/setup.ps1'
+[5.637s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/NAV/install/local_setup.sh'
+[5.640s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/NAV/install/_local_setup_util_sh.py'
+[5.643s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/NAV/install/setup.sh'
+[5.648s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/NAV/install/local_setup.bash'
+[5.652s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/NAV/install/setup.bash'
+[5.658s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/NAV/install/local_setup.zsh'
+[5.662s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/NAV/install/setup.zsh'

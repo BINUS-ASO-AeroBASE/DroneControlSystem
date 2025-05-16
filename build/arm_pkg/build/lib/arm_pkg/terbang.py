@@ -122,7 +122,7 @@ def main(args=None):
     rclpy.init(args=args)
     node = DroneKitNode()
 
-    node.arm_and_takeoff(10)  # Takeoff to 10m
+    node.arm_and_takeoff(1)  # Takeoff to 10m
     
     node.move_forward()
     time.sleep(1)

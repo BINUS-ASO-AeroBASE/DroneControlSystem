@@ -1,0 +1,43 @@
+[3.926s] Invoking command in '/home/jetson/NAV/src/arm_pkg': PYTHONPATH=/home/jetson/NAV/src/arm_pkg/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/arm_pkg build --build-base /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build install --record /home/jetson/NAV/src/arm_pkg/build/arm_pkg/install.log --install-scripts $base/lib/arm_pkg --single-version-externally-managed install_data
+[5.046s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[5.047s]   warnings.warn(
+[5.177s] running egg_info
+[5.179s] creating build/arm_pkg/arm_pkg.egg-info
+[5.179s] writing build/arm_pkg/arm_pkg.egg-info/PKG-INFO
+[5.180s] writing dependency_links to build/arm_pkg/arm_pkg.egg-info/dependency_links.txt
+[5.181s] writing entry points to build/arm_pkg/arm_pkg.egg-info/entry_points.txt
+[5.182s] writing requirements to build/arm_pkg/arm_pkg.egg-info/requires.txt
+[5.182s] writing top-level names to build/arm_pkg/arm_pkg.egg-info/top_level.txt
+[5.193s] writing manifest file 'build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[5.200s] reading manifest file 'build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[5.203s] writing manifest file 'build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[5.204s] running build
+[5.205s] running build_py
+[5.205s] creating /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build
+[5.205s] creating /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build/lib
+[5.206s] creating /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build/lib/arm_pkg
+[5.206s] copying arm_pkg/terbang.py -> /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build/lib/arm_pkg
+[5.206s] copying arm_pkg/arm.py -> /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build/lib/arm_pkg
+[5.207s] copying arm_pkg/__init__.py -> /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build/lib/arm_pkg
+[5.207s] running install
+[5.209s] running install_lib
+[5.213s] creating /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages/arm_pkg
+[5.213s] copying /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build/lib/arm_pkg/terbang.py -> /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages/arm_pkg
+[5.214s] copying /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build/lib/arm_pkg/arm.py -> /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages/arm_pkg
+[5.214s] copying /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build/lib/arm_pkg/__init__.py -> /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages/arm_pkg
+[5.216s] byte-compiling /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages/arm_pkg/terbang.py to terbang.cpython-38.pyc
+[5.227s] byte-compiling /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages/arm_pkg/arm.py to arm.cpython-38.pyc
+[5.228s] byte-compiling /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages/arm_pkg/__init__.py to __init__.cpython-38.pyc
+[5.229s] running install_data
+[5.229s] creating /home/jetson/NAV/src/arm_pkg/install/arm_pkg/share/ament_index
+[5.230s] creating /home/jetson/NAV/src/arm_pkg/install/arm_pkg/share/ament_index/resource_index
+[5.230s] creating /home/jetson/NAV/src/arm_pkg/install/arm_pkg/share/ament_index/resource_index/packages
+[5.231s] copying resource/arm_pkg -> /home/jetson/NAV/src/arm_pkg/install/arm_pkg/share/ament_index/resource_index/packages
+[5.231s] copying package.xml -> /home/jetson/NAV/src/arm_pkg/install/arm_pkg/share/arm_pkg
+[5.231s] running install_egg_info
+[5.238s] Copying build/arm_pkg/arm_pkg.egg-info to /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages/arm_pkg-0.0.0-py3.8.egg-info
+[5.242s] running install_scripts
+[5.312s] Installing arm_node script to /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/arm_pkg
+[5.312s] Installing fly_node script to /home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/arm_pkg
+[5.313s] writing list of installed files to '/home/jetson/NAV/src/arm_pkg/build/arm_pkg/install.log'
+[5.413s] Invoked command in '/home/jetson/NAV/src/arm_pkg' returned '0': PYTHONPATH=/home/jetson/NAV/src/arm_pkg/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/NAV/src/arm_pkg/install/arm_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/arm_pkg build --build-base /home/jetson/NAV/src/arm_pkg/build/arm_pkg/build install --record /home/jetson/NAV/src/arm_pkg/build/arm_pkg/install.log --install-scripts $base/lib/arm_pkg --single-version-externally-managed install_data

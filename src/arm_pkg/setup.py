@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
     'console_scripts': [
-        'arm_node = arm_pkg.arm:main',  
+        'arm_node = arm_pkg.arm:main',
+	'fly_node = arm_pkg.terbang:main'  
     ],
 }
 )
